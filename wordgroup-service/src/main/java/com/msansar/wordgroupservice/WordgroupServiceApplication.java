@@ -1,8 +1,10 @@
 package com.msansar.wordgroupservice;
 
+import com.msansar.wordgroupservice.client.FeignErrorDecoder;
 import com.msansar.wordgroupservice.model.WordGroup;
 import com.msansar.wordgroupservice.repository.WordGroupRepository;
 import com.msansar.wordgroupservice.service.WordGroupService;
+import feign.codec.ErrorDecoder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -23,5 +25,10 @@ public class WordgroupServiceApplication {
 		return args -> {
 
 		};
+	}
+
+	@Bean
+	public ErrorDecoder errorDecoder() {
+		return new FeignErrorDecoder();
 	}
 }
