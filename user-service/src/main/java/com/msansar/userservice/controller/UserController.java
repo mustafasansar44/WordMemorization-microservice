@@ -7,6 +7,7 @@ import com.msansar.userservice.dto.UserUpdateRequestDto;
 import com.msansar.userservice.dto.UserWithoutWordGroupResponseDto;
 import com.msansar.userservice.model.User;
 import com.msansar.userservice.service.UserService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +27,13 @@ public class UserController {
 
     public UserController(UserService userService) {
         this.userService = userService;
+    }
+
+    @Value("${user.service.count}")
+    private Integer count;
+    @GetMapping("/getprop")
+    public String getprop(){
+        return count.toString();
     }
 
     @PostMapping("/save")

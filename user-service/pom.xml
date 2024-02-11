@@ -87,6 +87,10 @@
 			<version>2.16.3</version>
 		</dependency>
 
+		<dependency>
+			<groupId></groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
