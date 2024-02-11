@@ -23,7 +23,7 @@ public class WordGroupTestDataFactory{
         return new WordGroupResponseDto(id, currentDate, currentDate, foreignWord, localWord, true, 1);
     }
     public static WordGroupSaveRequestDto generateWordGroupSaveRequestDto(){
-        return new WordGroupSaveRequestDto(foreignWord, localWord, 1);
+        return new WordGroupSaveRequestDto(foreignWord, localWord, 1, "123");
     }
     public static List<WordGroup> generateWordGroupList(int initWordGroupsLength){
         return IntStream.range(0, initWordGroupsLength).mapToObj(i ->

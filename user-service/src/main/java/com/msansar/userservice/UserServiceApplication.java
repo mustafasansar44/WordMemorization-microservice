@@ -24,11 +24,4 @@ public class UserServiceApplication {
 		SpringApplication.run(UserServiceApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner commandLineRunner() {
-		return args -> {
-			userService.save(new UserSaveRequestDto("username1", "password1", "email1"));
-		};
-	}
-
 }

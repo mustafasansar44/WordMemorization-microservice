@@ -44,4 +44,9 @@ public class WordGroupController {
     public ResponseEntity<WordGroupResponseDto> getById(@PathVariable String id){
         return ResponseEntity.ok(service.getById(id));
     }
+
+    @GetMapping("/merhaba")
+    public String merhaba(){
+        return "Merhaba";
+    }
 }
