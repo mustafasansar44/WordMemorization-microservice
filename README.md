@@ -9,6 +9,8 @@
 - [] Gateway Server implementasyonu
 - [] pom.xml'leri düzenle
 - [] lombok yerine kotlin ya da başka bir şey kullan. dto sınıflarını record'a çevir.
+- [] neden vault kullandım readme.md'de tanımını yap
+- [] global application.properties oluştur.
 
 ## Portlar
 Eureka-Server : 8761
