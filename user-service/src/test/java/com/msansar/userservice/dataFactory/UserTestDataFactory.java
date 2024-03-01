@@ -22,7 +22,7 @@ public class UserTestDataFactory {
         return new User(id, currentDate, currentDate, username, password, email);
     }
     public static UserResponseDto generateUserResponseDto(){
-        return new UserResponseDto(id, currentDate, currentDate, username, password, email);
+        return new UserResponseDto(id, currentDate, currentDate, username, password, email, List.of());
     }
     public static UserSaveRequestDto generateUserSaveRequestDto(){
         return new UserSaveRequestDto(username, password, email);
@@ -36,7 +36,7 @@ public class UserTestDataFactory {
     public static List<UserResponseDto> generateUserDtoList(int initUserDtosLength){
         List<UserResponseDto> userResponseDtos = new ArrayList<>();
         for(int i = 0; i <= initUserDtosLength; i++){
-            UserResponseDto user = new UserResponseDto(id+1, currentDate, currentDate, username+1, password+1, email+1);
+            UserResponseDto user = new UserResponseDto(id, currentDate, currentDate, username, password, email, List.of());
             userResponseDtos.add(user);
         }
         return userResponseDtos;

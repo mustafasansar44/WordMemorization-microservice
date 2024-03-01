@@ -29,12 +29,12 @@ public class UserController {
         this.userService = userService;
     }
 
-    @Value("${user.service.count}")
-    private Integer count;
-    @GetMapping("/getprop")
-    public String getprop(){
-        return count.toString();
-    }
+//    @Value("${user.service.count}")
+//    private Integer count;
+//    @GetMapping("/getprop")
+//    public String getprop(){
+//        return count.toString();
+//    }
 
     @PostMapping("/save")
     public ResponseEntity<UserResponseDto> save(@RequestBody UserSaveRequestDto saveRequestDto){

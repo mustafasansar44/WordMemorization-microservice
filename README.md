@@ -6,6 +6,7 @@
 ### Yapılacak işlemler
 
 - [] servislerin ip'leri random tanımlansın.
+- [] testleri düzenle
 - [] Gateway Server implementasyonu
 - [] pom.xml'leri düzenle
 - [] lombok yerine kotlin ya da başka bir şey kullan. dto sınıflarını record'a çevir.
